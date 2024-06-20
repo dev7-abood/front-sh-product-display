@@ -1,0 +1,131 @@
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7fa;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%;
+    max-width: 750px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.card__image {
+    background-image: url('/assets/8ba31b70acffa07075161e52d35fa6da.jpg');
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card__description {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card__description--title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card__description--price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444e4e;
+    margin: 5px 0;
+}
+
+.card__description--discount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #10ef10;
+    margin: 5px 0;
+}
+
+.card__description--info {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.card__description--options {
+    margin-top: 20px;
+}
+
+.sizes span, .colors span {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.colors .color-red { background-color: red; }
+.colors .color-green { background-color: green; }
+.colors .color-blue { background-color: blue; }
+.colors .color-pink { background-color: pink; }
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buy-now {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3a62c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-now:hover {
+    background-color: #2a4bb8;
+}
+
+@media (min-width: 601px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .card__image {
+        width: 40%;
+        height: auto;
+    }
+
+    .card__description {
+        width: 60%;
+    }
+}
