@@ -31,7 +31,7 @@ html, body {
 }
 
 .card__image {
-    background-image: url('/assets/8ba31b70acffa07075161e52d35fa6da.jpg');
+    background-image: url('assets/8ba31b70acffa07075161e52d35fa6da.jpg');
     width: 100%;
     height: 300px;
     background-size: cover;
